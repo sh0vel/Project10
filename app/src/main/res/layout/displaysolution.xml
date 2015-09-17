@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff0063ff">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/points">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/points"
+                android:id="@+id/tvPointsEntered"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123,123,123"
+                android:id="@+id/tvPA"
+                android:inputType="number|numberDecimal|numberSigned"
+                android:layout_below="@+id/tvPointsEntered"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="14dp"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123,123,123"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/tvPB"
+                android:layout_below="@+id/tvPointsEntered"
+                android:layout_alignTop="@+id/tvPA"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPC"
+                android:text="123,123,213"
+                android:textSize="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvPA"
+                android:layout_marginRight="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123,123,123"
+                android:id="@+id/tvPD1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@+id/tvPA"
+                android:layout_marginTop="14dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPD2"
+                android:text="123,123,123"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvPD1"
+                android:textSize="20dp"
+                android:layout_marginRight="50dp"
+
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true">
+
+            <com.shovon.project10.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/tvAns1"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_marginTop="12dp" />
+
+            <com.shovon.project10.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/tvAns2"
+                android:layout_below="@+id/tvAns1"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_marginTop="8dp"
+                />
+
+            <com.shovon.project10.AutoResizeTextView
+                android:layout_width="match_parent"
+
+
+                android:id="@+id/tvAns3"
+                android:layout_below="@+id/tvAns2"
+
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textSize="20dp"
+                />
+
+            <com.shovon.project10.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/tvAns4"
+                android:layout_below="@+id/tvAns3"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="20dp"
+                android:layout_marginTop="8dp" />
+
+            <com.shovon.project10.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/tvAns5"
+                android:layout_below="@+id/tvAns4"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="20dp"
+                android:layout_marginTop="8dp" />
+
+        </RelativeLayout>
+
+</RelativeLayout>
+
+    </LinearLayout>
